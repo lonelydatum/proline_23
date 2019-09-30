@@ -43,12 +43,13 @@ function start() {
 	// tl.to(['.puck', '.shadow'], .3, {opacity:0}, 'end')
 
 	tl.set(".frame2", { opacity: 1 });
-	tl.from(".illus", .5, { scale: 0, ease: Power2.easeInOut }, '+=.5');
-	tl.from(".t2", .01, { opacity: 0 }, '+=.5');
+	tl.from(".phone", .5, { y: 250, ease: Power2.easeInOut }, '+=.1');
+	tl.from(".illus", .5, { scale: 0, ease: Power2.easeInOut }, '-=.1');
+	tl.from(".t2", .3, { opacity: 0 }, '+=.1');
 
-	tl.from(".cta_wager", .01, { opacity: 0 }, '+=1.5');
+	tl.from(".cta_wager", .3, { opacity: 0 }, '+=1.5');
 	tl.to(".cta_wager", .01, { opacity: 0 }, '+=2');
-	tl.from(".cta_get", .01, { opacity: 0 });
+	tl.from(".cta_get", .3, { opacity: 0 });
 }
 
 start();
