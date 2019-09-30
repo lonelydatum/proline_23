@@ -27,8 +27,8 @@ function start(){
 
 	tl.add('text', '+=.7')
 	tl.from(".t1a", .01, {opacity:0}, 'text')
-	tl.from(".t1b", .01, {opacity:0}, 'text+=.6')
-	tl.from(".t1c", .01, {opacity:0}, 'text+=.9')
+	tl.from(".t1b", .01, {opacity:0}, 'text+=.4')
+	tl.from(".t1c", .01, {opacity:0}, 'text+=.7')
 
 	const time_scale = 3
 	const scaled = 1.4
@@ -65,7 +65,7 @@ function start(){
 	tl.from(".illus", .5, {scale:0, ease:Power2.easeInOut}, '-=.1')
 	tl.from(".t2", .3, {opacity:0}, '+=.1')
 
-	tl.from(".cta_wager", .3, {opacity:0}, '+=1.5')
+	tl.from(".cta_wager", .3, {opacity:0}, '+=1')
 	tl.to(".cta_wager", .01, {opacity:0}, '+=2')
 	tl.from(".cta_get", .3, {opacity:0})
 
