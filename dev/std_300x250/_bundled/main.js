@@ -28,7 +28,7 @@ function start() {
 
 	var time_scale = 3;
 	var scaled = 1.4;
-	tl.add('zoomin', '+=3');
+	tl.add('zoomin', '+=2.7');
 	tl.to(".t1", .5, { opacity: 0, y: '-=30' }, 'zoomin');
 	tl.to(".playa", time_scale, { scale: 1.4, ease: Power2.easeOut }, 'zoomin');
 	tl.from('.puck', 2, { y: "-=250" }, 'zoomin');
