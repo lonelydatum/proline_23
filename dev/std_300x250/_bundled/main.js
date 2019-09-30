@@ -35,8 +35,8 @@ function start() {
 
 	tl.to('.player_a.lines0', time_scale - .5, { scale: scaled, ease: Power2.easeOut }, 'zoomin');
 	tl.to('.player_a.lines1', time_scale - .3, { scale: scaled, ease: Power2.easeOut }, 'zoomin');
-	tl.to('.player_a.lines2', time_scale - .7, { scale: scaled, ease: Power2.easeOut }, 'zoomin');
-	tl.to('.player_b.lines0', time_scale - .6, { scale: scaled, ease: Power2.easeOut }, 'zoomin');
+	tl.to('.player_a.lines2', time_scale - .6, { scale: scaled, ease: Power1.easeOut }, 'zoomin');
+	tl.to('.player_b.lines0', time_scale - .3, { scale: scaled, ease: Power2.easeOut }, 'zoomin');
 	tl.to('.player_a.dots', time_scale - .4, { scale: scaled, ease: Power2.easeOut }, 'zoomin');
 
 	tl.add('outline', '-=1.5');
