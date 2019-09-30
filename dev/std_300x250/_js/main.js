@@ -2,21 +2,21 @@
 
 function start(){
 
-	// liners('.player_a.dots', .3)
-	// liners('.player_a.lines0', .6)
-	// liners('.player_a.lines1', .1)
-	// liners('.player_a.lines2', .7)
+	liners('.player_a.dots', .3)
+	liners('.player_a.lines0', .6)
+	liners('.player_a.lines1', .1)
+	liners('.player_a.lines2', .7)
 
 
-	// liners('.player_b.lines0', .2)
+	liners('.player_b.lines0', .2)
 
-	// function liners(className, start){
-	// 	const tl_line = new TimelineMax({repeat:6, repeatDelay: start})
+	function liners(className, start){
+		const tl_line = new TimelineMax({repeat:6, repeatDelay: start})
 		
-	// 	tl_line.to(className, .01, {opacity:1})
-	// 	tl_line.to(className, .1, {opacity:.85}, '+=.4')
-	// 	tl_line.to(className, .1, {opacity:1}, '+=.2')	
-	// }
+		tl_line.to(className, .01, {opacity:1})
+		tl_line.to(className, .1, {opacity:.7}, '+=.4')
+		tl_line.to(className, .1, {opacity:1}, '+=.2')	
+	}
 
 
 	const tl = new TimelineMax()
@@ -30,19 +30,19 @@ function start(){
 	tl.from(".t1b", .01, {opacity:0}, 'text+=.6')
 	tl.from(".t1c", .01, {opacity:0}, 'text+=.9')
 
-	const time_scale = 2.5
-	const scaled = 1.2
+	const time_scale = 3
+	const scaled = 1.4
 	tl.add('zoomin', '+=3')
 	tl.to(".t1", .5, {opacity:0, y:'-=30'}, 'zoomin')
-	tl.to(".playa", time_scale, {x:-0, y:-0, scale:1.4, ease:Power2.easeOut}, 'zoomin')
+	tl.to(".playa", time_scale, {scale:1.4, ease:Power2.easeOut}, 'zoomin')
 	tl.from('.puck', 2, {y:"-=250"}, 'zoomin')
 
 	
-	tl.from('.player_a.lines0', time_scale, {opacity:0, scale:scaled, ease:Power2.easeOut}, 'zoomin')
-	tl.from('.player_a.lines1', time_scale+.1, {opacity:0, scale:scaled, ease:Power2.easeOut}, 'zoomin')
-	tl.from('.player_a.lines2', time_scale+.2, {opacity:0, scale:scaled, ease:Power2.easeOut}, 'zoomin')
-	tl.from('.player_b.lines0', time_scale+.3, {opacity:0, scale:scaled, ease:Power2.easeOut}, 'zoomin')
-	tl.from('.player_a.dots', time_scale+.3, {opacity:0, scale:scaled, ease:Power2.easeOut}, 'zoomin')
+	tl.to('.player_a.lines0', time_scale-.5,	 { scale:scaled, ease:Power2.easeOut}, 'zoomin')
+	tl.to('.player_a.lines1', time_scale-.3,	 { scale:scaled, ease:Power2.easeOut}, 'zoomin')
+	tl.to('.player_a.lines2', time_scale-.7,	 { scale:scaled, ease:Power2.easeOut}, 'zoomin')
+	tl.to('.player_b.lines0', time_scale-.6,	 { scale:scaled, ease:Power2.easeOut}, 'zoomin')
+	tl.to('.player_a.dots', time_scale-.4,	 { scale:scaled, ease:Power2.easeOut}, 'zoomin')
 
 
 	tl.add('outline', '-=1.5')
@@ -70,6 +70,7 @@ function start(){
 	tl.from(".cta_get", .3, {opacity:0})
 
 	// tl.gotoAndPlay("zoomin")
+	
 }
 
 start()
