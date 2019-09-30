@@ -21,6 +21,35 @@
 .playa{
 	transform-origin: 34px 291px;
 	// @include pos-scale(-10, -119, 1.4);
+	// .dots{
+	// 	display: none;
+	// }
+
+	.player_a.lines0, .player_a.lines1, .player_a.lines2, .player_a.dots, .player_b.lines0 {
+		// display: none;
+		
+
+	}
+
+	.lines{
+		// @include pos-scale(0, 0, 1);
+	}
+
+	// .player_a.lines1{
+	// 	display: none;
+	// }
+
+	// .player_a.lines2{
+	// 	display: none;
+	// }
+}
+
+.player_a{
+	transform-origin: 60px 160px;		
+}
+
+.player_b{
+	transform-origin: 167px 170px;		
 }
 
 .proline_outline{

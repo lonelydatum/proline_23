@@ -228,6 +228,18 @@ sup {
   transform-origin: 34px 291px;
 }
 
+.player_a {
+  -webkit-transform-origin: 60px 160px;
+  -ms-transform-origin: 60px 160px;
+  transform-origin: 60px 160px;
+}
+
+.player_b {
+  -webkit-transform-origin: 167px 170px;
+  -ms-transform-origin: 167px 170px;
+  transform-origin: 167px 170px;
+}
+
 .proline_outline {
   height: 470px;
   width: 200px;
