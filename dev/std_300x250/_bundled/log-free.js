@@ -21,20 +21,20 @@ function start() {
 	var tl = new TimelineMax();
 	tl.set(".frame1", { opacity: 1 });
 
-	TweenLite.from('.puck', .5, { y: "-=150" });
-
-	tl.add('text', '+=1.2');
+	tl.add('text', '+=.7');
 	tl.from(".t1a", .01, { opacity: 0 }, 'text');
-	tl.from(".t1b", .01, { opacity: 0 }, 'text+=.3');
-	tl.from(".t1c", .01, { opacity: 0 }, 'text+=.5');
+	tl.from(".t1b", .01, { opacity: 0 }, 'text+=.6');
+	tl.from(".t1c", .01, { opacity: 0 }, 'text+=.9');
 
-	tl.add('zoomin', '+=2');
+	tl.add('zoomin', '+=3');
 	tl.to(".t1", .5, { opacity: 0, y: '-=30' }, 'zoomin');
-	tl.to(".playa", .6, { x: -0, y: -0, scale: 1.4, ease: Power2.easeInOut }, 'zoomin');
+	tl.to(".playa", 1, { x: -0, y: -0, scale: 1.4, ease: Power2.easeInOut }, 'zoomin');
+	tl.from('.puck', 1, { y: "-=250" }, 'zoomin');
 
-	tl.add('outline', '+=0');
-	tl.to('.proline_outline.small', .6, { ease: Power2.easeOut, x: 180, y: 18, scale: .4, rotate: -40 }, 'outline');
-	tl.to('.proline_outline.big', .6, { ease: Power2.easeOut, x: 305, y: -189, scale: .5, rotate: 49 }, 'outline');
+	tl.add('outline', '-=.3');
+	tl.to('.proline_outline.small', 1.8, { ease: Power2.easeInOut, x: 70, y: -143, scale: .4, rotate: -40 }, 'outline');
+	tl.to('.proline_outline.big', 1.8, { ease: Power2.easeInOut, x: -47, y: 111, scale: .5, rotate: 49 }, 'outline+=.3');
+	// tl.from('.proline_outline.big', 1.8, { ease:Power2.easeInOut, x:475, y:-369, scale:.5, rotate:49}, 'outline+=.3')
 
 	tl.add('end', '+=1');
 	tl.to(".frame1", .3, { opacity: 0 }, 'end');
@@ -53,7 +53,7 @@ function start() {
 
 start();
 
-// tl.gotoAndPlay("end")
+// tl.gotoAndPlay("outline")
 
 module.exports = {};
 

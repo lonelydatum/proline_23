@@ -228,10 +228,16 @@ sup {
   transform-origin: 34px 291px;
 }
 
+.proline_outline {
+  height: 470px;
+  width: 200px;
+  overflow: hidden;
+}
+
 .proline_outline.big {
-  -webkit-transform: translate(-47px, 111px) scale(0.5) rotate(49deg);
-  -ms-transform: translate(-47px, 111px) scale(0.5) rotate(49deg);
-  transform: translate(-47px, 111px) scale(0.5) rotate(49deg);
+  -webkit-transform: translate(475px, -369px) scale(0.5) rotate(49deg);
+  -ms-transform: translate(475px, -369px) scale(0.5) rotate(49deg);
+  transform: translate(475px, -369px) scale(0.5) rotate(49deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;

@@ -23,9 +23,16 @@
 	// @include pos-scale(-10, -119, 1.4);
 }
 
+.proline_outline{
+	height: 470px;
+	width: 200px;
+	overflow: hidden;
+}
+
 
 .proline_outline.big{
-	@include pos-scale-rotate(-47, 111, .5, 49);
+	// @include pos-scale-rotate(-47, 111, .5, 49);
+	@include pos-scale-rotate(475, -369, .5, 49);
 	// @include pos-scale-rotate(305, -189, .5, 49);
 	
 }
@@ -33,11 +40,10 @@
 
 .proline_outline.small{
 	@include pos-scale-rotate(299, 157, 0.4, -40);
-	// @include pos-scale-rotate(180, 17, 0.4, -40);
 
 	
 	
-	
+	// @include pos-scale-rotate(70, -143, 0.4, -40);
 }
 
 .illus{
