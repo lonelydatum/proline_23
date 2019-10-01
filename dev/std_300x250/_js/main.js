@@ -60,27 +60,19 @@ function start(){
 
 	
 
-	tl.to('.proline_outline.big .holder', 1, { ease:Power2.easeOut, x:0, y:"+=500"}, 'zoomin')	
-	tl.to('.proline_outline.small .holder', 1, { ease:Power2.easeOut, x:0, y:0}, 'zoomin')	
-	tl.to('.proline_outline.big .holder', 3, { ease:Linear.easeNone, x:0, y:"+=200"}, 'zoomin+=.7')	
-	tl.to('.proline_outline.small .holder', 3, { ease:Linear.easeNone, x:0, y:"-=200"}, 'zoomin+=.7')	
+	tl.to('.proline_outline.big .holder', .75, { ease:Power2.easeOut, x:0, y:"+=500"}, 'zoomin')	
+	tl.to('.proline_outline.small .holder', .75, { ease:Power2.easeOut, x:0, y:0}, 'zoomin')	
+	tl.to('.proline_outline.big .holder', 2, { ease:Linear.easeNone, x:0, y:"+=100"}, 'zoomin+=.7')	
+	tl.to('.proline_outline.small .holder', 2, { ease:Linear.easeNone, x:0, y:"-=100"}, 'zoomin+=.7')	
 	
 
 	
-	
-	
 
-	// tl.from('.proline_outline.big', 1.8, { ease:Power2.easeInOut, x:475, y:-369, scale:.5, rotate:49}, 'outline+=.3')
-
-
-
-
-	tl.add('end', '+=1')
+	tl.add('end', '-=.8')
 	tl.to(".frame1", .3, {opacity:0}, 'end')
-	
 
 	tl.set(".frame2", {opacity:1})
-	tl.from(".phone", .5, {y:250, ease:Power2.easeInOut}, '+=.1')
+	tl.from(".phone", .5, {y:250, ease:Power2.easeInOut}, '-=.1')
 	tl.from(".illus", .5, {scale:0, ease:Power3.easeOut}, '-=.1')
 	tl.from(".t2", .3, {opacity:0}, '+=.1')
 
