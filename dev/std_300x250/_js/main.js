@@ -2,21 +2,21 @@
 
 function start(){
 
-	liners('.player_a.dots', .3)
-	liners('.player_a.lines0', .6)
-	liners('.player_a.lines1', .1)
-	liners('.player_a.lines2', .7)
+	// liners('.player_a.dots', .3)
+	// liners('.player_a.lines0', .6)
+	// liners('.player_a.lines1', .1)
+	// liners('.player_a.lines2', .7)
 
 
-	liners('.player_b.lines0', .2)
+	// liners('.player_b.lines0', .2)
 
-	function liners(className, start){
-		const tl_line = new TimelineMax({repeat:6, repeatDelay: start})
+	// function liners(className, start){
+	// 	const tl_line = new TimelineMax({repeat:6, repeatDelay: start})
 		
-		tl_line.to(className, .01, {opacity:1})
-		tl_line.to(className, .1, {opacity:.7}, '+=.4')
-		tl_line.to(className, .1, {opacity:1}, '+=.2')	
-	}
+	// 	tl_line.to(className, .01, {opacity:1})
+	// 	tl_line.to(className, .1, {opacity:.7}, '+=.4')
+	// 	tl_line.to(className, .1, {opacity:1}, '+=.2')	
+	// }
 
 
 	const tl = new TimelineMax()
@@ -35,7 +35,7 @@ function start(){
 	tl.add('zoomin', '+=2.7')
 	tl.to(".t1", .5, {opacity:0, y:'-=30'}, 'zoomin')
 	tl.to(".playa", time_scale, {scale:1.4, ease:Power2.easeOut}, 'zoomin')
-	tl.from('.puck', 2, {y:"-=250"}, 'zoomin')
+	tl.from('.puck', 2, {y:"-=30"}, 'zoomin')
 
 	
 	tl.to('.player_a.lines0', time_scale-.5,	 { scale:scaled, ease:Power2.easeOut}, 'zoomin')
@@ -46,8 +46,8 @@ function start(){
 
 
 	tl.add('outline', '-=1.5')
-	tl.to('.proline_outline.small', 1.8, { ease:Power2.easeInOut, x:70, y:-143, scale:.4, rotate:-40}, 'outline')	
-	tl.to('.proline_outline.big', 1.8, { ease:Power2.easeInOut, x:-47, y:111, scale:.5, rotate:49}, 'outline+=.3')
+	tl.to('.proline_outline.small', 3, { ease:Power2.easeInOut, x:70, y:-143, scale:.4, rotate:-40}, 'outline')	
+	tl.to('.proline_outline.big', 3, { ease:Power2.easeInOut, x:-47, y:111, scale:.5, rotate:49}, 'outline+=.3')
 
 	// tl.from('.proline_outline.big', 1.8, { ease:Power2.easeInOut, x:475, y:-369, scale:.5, rotate:49}, 'outline+=.3')
 
