@@ -29,8 +29,8 @@
 	@include pos(-5, -56);
 }
 .lines{
-		@include pos-scale(0, 0, 1);
-	}
+	@include pos-scale(0, 0, 1);
+}
 
 .player_a{
 	transform-origin: 34px 291px;
