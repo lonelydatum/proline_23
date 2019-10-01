@@ -3,28 +3,28 @@
 function start(){
 
 	const pos_time = 5
-	const time_scale = 3
+	const time_scale = 4
 	const scaled = 1.4
 	const x = 19
 
 
 	const tl_pos = new TimelineMax()
 	
-	tl_pos.to('.player_a.player', pos_time-.5,	 { x:`+=${x}`, ease:Power2.easeOut}, 0)
-	tl_pos.to('.player_a.back', pos_time+.5,	 { x:`+=${x}`, ease:Power2.easeOut}, 0)
-	tl_pos.to('.player_a.body', pos_time+.2,	 { x:`+=${x}`, ease:Power2.easeOut}, 0)
-	tl_pos.to('.player_a.dots', pos_time-.6,	 { x:`+=${x}`, ease:Power1.easeOut}, 0)
-	tl_pos.to('.player_a.head', pos_time+.3,	 { x:`+=${x}`, ease:Power2.easeOut}, 0)
-	tl_pos.to('.player_a.leg1', pos_time+.1,	 { x:`+=${x}`, ease:Power2.easeOut}, 0)
-	tl_pos.to('.player_a.leg2', pos_time+.4,	 { x:`+=${x}`, ease:Power2.easeOut}, 0)
-	tl_pos.to('.player_a.skates', pos_time-.1,	 { x:`+=${x}`, ease:Power2.easeOut}, 0)
+	tl_pos.to('.player_a.player', pos_time-.5,	 { x:`+=${x}`, ease:Power1.easeOut}, 0)
+	tl_pos.to('.player_a.back', pos_time+.5,	 { x:`+=${x}`, ease:Power1.easeOut}, 0)
+	tl_pos.to('.player_a.body', pos_time+.2,	 { x:`+=${x}`, ease:Power1.easeOut}, 0)
+	tl_pos.to('.player_a.dots', pos_time+.6,	 { x:`+=${x}`, ease:Power1.easeOut}, 0)
+	tl_pos.to('.player_a.head', pos_time+.3,	 { x:`+=${x}`, ease:Power1.easeOut}, 0)
+	tl_pos.to('.player_a.leg1', pos_time+.1,	 { x:`+=${x}`, ease:Power1.easeOut}, 0)
+	tl_pos.to('.player_a.leg2', pos_time+.4,	 { x:`+=${x}`, ease:Power1.easeOut}, 0)
+	tl_pos.to('.player_a.skates', pos_time-.1,	 { x:`+=${x}`, ease:Power1.easeOut}, 0)
 
-	tl_pos.to('.player_b.player', pos_time-.5,	 { x:`-=${x}`, ease:Power2.easeOut}, 0)
-	tl_pos.to('.player_b.lines0', pos_time+.3,	 { x:`-=${x}`, ease:Power2.easeOut}, 0)
-	tl_pos.to('.player_b.lines1', pos_time+.5,	 { x:`-=${x}`, ease:Power2.easeOut}, 0)
-	tl_pos.to('.puck', time_scale-.5,	 { y:`+=${x}`, scale:scaled, ease:Power2.easeOut}, 0)
+	tl_pos.to('.player_b.player', pos_time-.5,	 { x:`-=${x}`, ease:Power1.easeOut}, 0)
+	tl_pos.to('.player_b.lines0', pos_time+.3,	 { x:`-=${x}`, ease:Power1.easeOut}, 0)
+	tl_pos.to('.player_b.lines1', pos_time+.5,	 { x:`-=${x}`, ease:Power1.easeOut}, 0)
+	tl_pos.to('.puck', time_scale+.5,	 { y:-3, ease:Power2.easeOut}, 0)
 
-	tl_pos.add('zoomin', "-=2")
+	tl_pos.add('zoomin', "-=2.2")
 	
 	tl_pos.to('.puck', time_scale-.5,	 { x:35, y:-3, scale:scaled, ease:Power2.easeOut}, 'zoomin')
 	tl_pos.to('.player_b.player', time_scale-.5,	 { x:0, scale:scaled, ease:Power2.easeOut}, 'zoomin')
