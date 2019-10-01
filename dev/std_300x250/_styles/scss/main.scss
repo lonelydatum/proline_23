@@ -18,63 +18,54 @@
 }
 
 
-.playa{
-	transform-origin: 34px 291px;
-	// @include pos-scale(-10, -119, 1.4);
-	// .dots{
-	// 	display: none;
-	// }
 
-	.player_a.lines0, .player_a.lines1, .player_a.lines2, .player_a.dots, .player_b.lines0 {
-		// display: none;
-		
 
-	}
-
-	.lines{
-		// @include pos-scale(0, 0, 1);
-	}
-
-	// .player_a.lines1{
-	// 	display: none;
-	// }
-
-	// .player_a.lines2{
-	// 	display: none;
-	// }
+.shadow{
+	transform-origin: 150px 230px;
 }
+
+.puck{
+	transform-origin: 122px 216px;
+	@include pos(-5, -56);
+}
+.lines{
+		@include pos-scale(0, 0, 1);
+	}
 
 .player_a{
 	transform-origin: 34px 291px;
-	// transform-origin: 60px 160px;		
+	@include pos(-30, 0);
 }
 
 .player_b{
 	transform-origin: 34px 291px;
-	// transform-origin: 167px 170px;		
+	@include pos(30, 0);
 }
 
 .proline_outline{
-	height: 470px;
+	height: 546px;
 	width: 200px;
 	overflow: hidden;
-}
-
-
-.proline_outline.big{
-	// @include pos-scale-rotate(-47, 111, .5, 49);
-	@include pos-scale-rotate(475, -369, .5, 49);
-	// @include pos-scale-rotate(305, -189, .5, 49);
 	
 }
+
+
+.proline_outline.big{	
+	@include pos-scale-rotate(150, -60, .5, 49);
+	.holder{
+		@include pos(0, -910);
+	}
+}
+
+
 
 
 .proline_outline.small{
-	@include pos-scale-rotate(299, 157, 0.4, -40);
-
-	
-	
-	// @include pos-scale-rotate(70, -143, 0.4, -40);
+	// @include pos-scale-rotate(299, 157, 0.4, -40);
+	@include pos-scale-rotate(160, 27, 0.4, -40);
+	.holder{
+		@include pos(0, 550);
+	}
 }
 
 .illus{
@@ -82,7 +73,7 @@
 }
 
 img.logoItem2{
-	@include pos(0, 465);
+	@include pos(0, 463);
 }
 
 #legalBtn{	

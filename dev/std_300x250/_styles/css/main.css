@@ -222,34 +222,86 @@ sup {
   height: 250px;
 }
 
-.playa {
-  -webkit-transform-origin: 34px 291px;
-  -ms-transform-origin: 34px 291px;
-  transform-origin: 34px 291px;
+.shadow {
+  -webkit-transform-origin: 150px 230px;
+  -ms-transform-origin: 150px 230px;
+  transform-origin: 150px 230px;
+}
+
+.puck {
+  -webkit-transform-origin: 122px 216px;
+  -ms-transform-origin: 122px 216px;
+  transform-origin: 122px 216px;
+  -webkit-transform: translate(-5px, -56px);
+  -ms-transform: translate(-5px, -56px);
+  transform: translate(-5px, -56px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.lines {
+  -webkit-transform: translate(0px, 0px) scale(1, 1);
+  -ms-transform: translate(0px, 0px) scale(1, 1);
+  transform: translate(0px, 0px) scale(1, 1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
 }
 
 .player_a {
   -webkit-transform-origin: 34px 291px;
   -ms-transform-origin: 34px 291px;
   transform-origin: 34px 291px;
+  -webkit-transform: translate(-30px, 0px);
+  -ms-transform: translate(-30px, 0px);
+  transform: translate(-30px, 0px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
 }
 
 .player_b {
   -webkit-transform-origin: 34px 291px;
   -ms-transform-origin: 34px 291px;
   transform-origin: 34px 291px;
+  -webkit-transform: translate(30px, 0px);
+  -ms-transform: translate(30px, 0px);
+  transform: translate(30px, 0px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
 }
 
 .proline_outline {
-  height: 470px;
+  height: 546px;
   width: 200px;
   overflow: hidden;
 }
 
 .proline_outline.big {
-  -webkit-transform: translate(475px, -369px) scale(0.5) rotate(49deg);
-  -ms-transform: translate(475px, -369px) scale(0.5) rotate(49deg);
-  transform: translate(475px, -369px) scale(0.5) rotate(49deg);
+  -webkit-transform: translate(150px, -60px) scale(0.5) rotate(49deg);
+  -ms-transform: translate(150px, -60px) scale(0.5) rotate(49deg);
+  transform: translate(150px, -60px) scale(0.5) rotate(49deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.proline_outline.big .holder {
+  -webkit-transform: translate(0px, -910px);
+  -ms-transform: translate(0px, -910px);
+  transform: translate(0px, -910px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -258,9 +310,20 @@ sup {
 }
 
 .proline_outline.small {
-  -webkit-transform: translate(299px, 157px) scale(0.4) rotate(-40deg);
-  -ms-transform: translate(299px, 157px) scale(0.4) rotate(-40deg);
-  transform: translate(299px, 157px) scale(0.4) rotate(-40deg);
+  -webkit-transform: translate(160px, 27px) scale(0.4) rotate(-40deg);
+  -ms-transform: translate(160px, 27px) scale(0.4) rotate(-40deg);
+  transform: translate(160px, 27px) scale(0.4) rotate(-40deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.proline_outline.small .holder {
+  -webkit-transform: translate(0px, 550px);
+  -ms-transform: translate(0px, 550px);
+  transform: translate(0px, 550px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -275,9 +338,9 @@ sup {
 }
 
 img.logoItem2 {
-  -webkit-transform: translate(0px, 465px);
-  -ms-transform: translate(0px, 465px);
-  transform: translate(0px, 465px);
+  -webkit-transform: translate(0px, 463px);
+  -ms-transform: translate(0px, 463px);
+  transform: translate(0px, 463px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;

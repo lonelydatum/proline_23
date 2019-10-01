@@ -28,20 +28,31 @@ function start() {
 
 	var time_scale = 3;
 	var scaled = 1.4;
+	var x = 50;
 	tl.add('zoomin', '+=2.7');
 	tl.to(".t1", .5, { opacity: 0, y: '-=30' }, 'zoomin');
-	tl.to(".playa", time_scale, { scale: 1.4, ease: Power2.easeOut }, 'zoomin');
-	tl.from('.puck', 2, { y: "-=30" }, 'zoomin');
+	// tl.to(".playa", time_scale, {scale:1.4, ease:Power2.easeOut}, 'zoomin')
+	tl.to('.puck', time_scale - .5, { x: 35, y: -3, scale: scaled, ease: Power2.easeOut }, 'zoomin');
+	tl.to('.player_b.player', time_scale - .5, { x: 0, scale: scaled, ease: Power2.easeOut }, 'zoomin');
 
-	tl.to('.player_a.lines0', time_scale - .5, { scale: scaled, ease: Power2.easeOut }, 'zoomin');
-	tl.to('.player_a.lines1', time_scale - .3, { scale: scaled, ease: Power2.easeOut }, 'zoomin');
-	tl.to('.player_a.lines2', time_scale - .6, { scale: scaled, ease: Power1.easeOut }, 'zoomin');
-	tl.to('.player_b.lines0', time_scale - .3, { scale: scaled, ease: Power2.easeOut }, 'zoomin');
-	tl.to('.player_a.dots', time_scale - .4, { scale: scaled, ease: Power2.easeOut }, 'zoomin');
+	tl.to('.shadow', time_scale - .5, { x: 0, scale: scaled, ease: Power2.easeOut }, 'zoomin');
+	tl.to('.player_a.player', time_scale - .5, { x: 0, scale: scaled, ease: Power2.easeOut }, 'zoomin');
+	tl.to('.player_a.back', time_scale + .5, { x: 0, scale: scaled, ease: Power2.easeOut }, 'zoomin');
+	tl.to('.player_a.body', time_scale + .2, { x: 0, scale: scaled, ease: Power2.easeOut }, 'zoomin');
+	tl.to('.player_a.dots', time_scale - .6, { x: 0, scale: scaled, ease: Power1.easeOut }, 'zoomin');
+	tl.to('.player_a.head', time_scale + .3, { x: 0, scale: scaled, ease: Power2.easeOut }, 'zoomin');
+	tl.to('.player_a.leg1', time_scale + .1, { x: 0, scale: scaled, ease: Power2.easeOut }, 'zoomin');
+	tl.to('.player_a.leg2', time_scale + .4, { x: 0, scale: scaled, ease: Power2.easeOut }, 'zoomin');
+	tl.to('.player_a.skates', time_scale - .1, { x: 0, scale: scaled, ease: Power2.easeOut }, 'zoomin');
 
-	tl.add('outline', '-=1.5');
-	tl.to('.proline_outline.small', 3, { ease: Power2.easeInOut, x: 70, y: -143, scale: .4, rotate: -40 }, 'outline');
-	tl.to('.proline_outline.big', 3, { ease: Power2.easeInOut, x: -47, y: 111, scale: .5, rotate: 49 }, 'outline+=.3');
+	tl.to('.player_b.lines0', time_scale + .3, { x: 0, scale: scaled, ease: Power2.easeOut }, 'zoomin');
+	tl.to('.player_b.lines1', time_scale + .5, { x: 5, scale: scaled, ease: Power2.easeOut }, 'zoomin');
+
+	// tl.add('outline', '-=1.5')
+	tl.to('.proline_outline.big .holder', 1, { ease: Power2.easeOut, x: 0, y: "+=500" }, 'zoomin');
+	tl.to('.proline_outline.small .holder', 1, { ease: Power2.easeOut, x: 0, y: 0 }, 'zoomin');
+	tl.to('.proline_outline.big .holder', 3, { ease: Linear.easeNone, x: 0, y: "+=200" }, 'zoomin+=1');
+	tl.to('.proline_outline.small .holder', 3, { ease: Linear.easeNone, x: 0, y: "-=200" }, 'zoomin+=1');
 
 	// tl.from('.proline_outline.big', 1.8, { ease:Power2.easeInOut, x:475, y:-369, scale:.5, rotate:49}, 'outline+=.3')
 
@@ -53,7 +64,7 @@ function start() {
 
 	tl.set(".frame2", { opacity: 1 });
 	tl.from(".phone", .5, { y: 250, ease: Power2.easeInOut }, '+=.1');
-	tl.from(".illus", .5, { scale: 0, ease: Power2.easeInOut }, '-=.1');
+	tl.from(".illus", .5, { scale: 0, ease: Power3.easeOut }, '-=.1');
 	tl.from(".t2", .3, { opacity: 0 }, '+=.1');
 
 	tl.from(".cta_wager", .3, { opacity: 0 }, '+=1');
