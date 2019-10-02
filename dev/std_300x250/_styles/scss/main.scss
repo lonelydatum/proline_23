@@ -25,8 +25,10 @@
 }
 
 .puck{
-	transform-origin: 122px 216px;
-	@include pos(-5, -56);
+	transform-origin: 240px 420px;
+	
+	@include pos-scale(-120, -260, 0.5);
+	// @include pos-scale(-82, -241, .7);
 }
 .lines{
 	@include pos-scale(0, 0, 1);
@@ -35,11 +37,24 @@
 .player_a{
 	transform-origin: 34px 291px;
 	@include pos(-30, 0);
+	
+}
+
+.player_a.player{
+	transform-origin: 140px 320px;
+	@include pos-scale(-102, -160, 0.5);
+	// @include pos-scale(-52, -211, 0.7);	
 }
 
 .player_b{
 	transform-origin: 34px 291px;
 	@include pos(30, 0);
+	// @include pos-scale(0, 0, 1.4);
+}
+.player_b.player{
+	transform-origin: 340px 330px;
+	@include pos-scale(-139, -164, 0.5);
+	// @include pos-scale(-112, -214, 0.7);	
 }
 
 .proline_outline{

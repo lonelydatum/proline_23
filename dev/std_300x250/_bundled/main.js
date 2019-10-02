@@ -4,7 +4,7 @@
 function start() {
 
 	var pos_time = 5;
-	var time_scale = 4;
+	var time_scale = 3.9;
 	var scaled = 1.4;
 	var x = 19;
 
@@ -22,15 +22,15 @@ function start() {
 	tl_pos.to('.player_b.player', pos_time - .5, { x: '-=' + x, ease: Power1.easeOut }, 0);
 	tl_pos.to('.player_b.lines0', pos_time + .3, { x: '-=' + x, ease: Power1.easeOut }, 0);
 	tl_pos.to('.player_b.lines1', pos_time + .5, { x: '-=' + x, ease: Power1.easeOut }, 0);
-	tl_pos.to('.puck', time_scale + .5, { y: -3, ease: Power2.easeOut }, 0);
+	tl_pos.to('.puck', time_scale, { y: -221, ease: Power2.easeOut }, 0);
 
-	tl_pos.add('zoomin', "-=2.2");
+	tl_pos.add('zoomin', 3.4);
 
-	tl_pos.to('.puck', time_scale - .5, { x: 35, y: -3, scale: scaled, ease: Power2.easeOut }, 'zoomin');
-	tl_pos.to('.player_b.player', time_scale - .5, { x: 0, scale: scaled, ease: Power2.easeOut }, 'zoomin');
+	tl_pos.to('.puck', time_scale - .5, { x: -82, y: -241, scale: .7, ease: Power2.easeOut }, 'zoomin');
+	tl_pos.to('.player_b.player', time_scale - .1, { x: -112, y: -214, scale: .7, ease: Power2.easeOut }, 'zoomin');
 
 	tl_pos.to('.shadow', time_scale - .5, { x: 0, scale: scaled, ease: Power2.easeOut }, 'zoomin');
-	tl_pos.to('.player_a.player', time_scale - .5, { x: 0, scale: scaled, ease: Power2.easeOut }, 'zoomin');
+	tl_pos.to('.player_a.player', time_scale - .5, { x: -52, y: -211, scale: .7, ease: Power2.easeOut }, 'zoomin');
 	tl_pos.to('.player_a.back', time_scale + .5, { x: 0, scale: scaled, ease: Power2.easeOut }, 'zoomin');
 	tl_pos.to('.player_a.body', time_scale + .2, { x: 0, scale: scaled, ease: Power2.easeOut }, 'zoomin');
 	tl_pos.to('.player_a.dots', time_scale - .6, { x: 0, scale: scaled, ease: Power1.easeOut }, 'zoomin');
@@ -39,8 +39,8 @@ function start() {
 	tl_pos.to('.player_a.leg2', time_scale + .4, { x: 0, scale: scaled, ease: Power2.easeOut }, 'zoomin');
 	tl_pos.to('.player_a.skates', time_scale - .1, { x: 0, scale: scaled, ease: Power2.easeOut }, 'zoomin');
 
-	tl_pos.to('.player_b.lines0', time_scale + .3, { x: 0, scale: scaled, ease: Power2.easeOut }, 'zoomin');
-	tl_pos.to('.player_b.lines1', time_scale + .5, { x: 5, scale: scaled, ease: Power2.easeOut }, 'zoomin');
+	tl_pos.to('.player_b.lines0', time_scale, { x: 0, scale: scaled, ease: Power2.easeOut }, 'zoomin');
+	tl_pos.to('.player_b.lines1', time_scale + .2, { x: 0, scale: scaled, ease: Power2.easeOut }, 'zoomin');
 
 	var tl = new TimelineMax();
 	tl.set(".frame1", { opacity: 1 });
