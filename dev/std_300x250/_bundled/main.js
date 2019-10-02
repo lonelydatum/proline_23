@@ -22,11 +22,11 @@ function start() {
 	tl_pos.to('.player_b.player', pos_time - .5, { x: '-=' + x, ease: Power1.easeOut }, 0);
 	tl_pos.to('.player_b.lines0', pos_time + .3, { x: '-=' + x, ease: Power1.easeOut }, 0);
 	tl_pos.to('.player_b.lines1', pos_time + .5, { x: '-=' + x, ease: Power1.easeOut }, 0);
-	tl_pos.to('.puck', time_scale, { y: -221, ease: Power2.easeOut }, 0);
+	tl_pos.to('.puck', time_scale * 2, { y: -211, ease: Power2.easeOut }, 0);
 
 	tl_pos.add('zoomin', 3.4);
 
-	tl_pos.to('.puck', time_scale - .5, { x: -82, y: -241, scale: .7, ease: Power2.easeOut }, 'zoomin');
+	tl_pos.to('.puck', time_scale - .5, { x: -82, y: -231, scale: .7, ease: Power2.easeOut }, 'zoomin');
 	tl_pos.to('.player_b.player', time_scale - .1, { x: -112, y: -214, scale: .7, ease: Power2.easeOut }, 'zoomin');
 
 	tl_pos.to('.shadow', time_scale - .5, { x: 0, scale: scaled, ease: Power2.easeOut }, 'zoomin');
@@ -57,8 +57,8 @@ function start() {
 	tl.to('.proline_outline.big .holder', 2, { ease: Linear.easeNone, x: 0, y: "+=100" }, 'zoomin+=.7');
 	tl.to('.proline_outline.small .holder', 2, { ease: Linear.easeNone, x: 0, y: "-=100" }, 'zoomin+=.7');
 
-	tl.add('end', '-=.8');
-	tl.to(".frame1", .3, { opacity: 0 }, 'end');
+	tl.add('end', '-=.5');
+	tl.to(".frame1", .2, { opacity: 0 }, 'end');
 
 	tl.set(".frame2", { opacity: 1 });
 	tl.from(".phone", .5, { y: 250, ease: Power2.easeInOut }, '-=.1');
