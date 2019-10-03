@@ -24,7 +24,7 @@ function start() {
 	tl.to(".t1a", .3, { opacity: 0 }, "+=1.8");
 	tl.from(".t2", .3, { opacity: 0 });
 
-	tl.add("down", "+=1.9");
+	tl.add("down", "+=1.5");
 	tl.from(".t2.t2bb", .15, { y: "-=60" }, "down");
 	tl.to(".t2.t2b", .15, { y: "+=70" }, "down");
 	tl.to(".t2.t2a", .3, { x: "+=10" }, "down");
@@ -38,7 +38,7 @@ function start() {
 
 	tl.from(".t3a", .4, { opacity: 0 });
 	tl.from(".cta_wager", .3, { opacity: 0 }, "+=.2");
-	tl.to(".cta_wager", .3, { opacity: 0 }, "+=1.7");
+	tl.to(".cta_wager", .3, { opacity: 0 }, "+=2");
 	tl.from(".cta_get", .3, { opacity: 0 });
 
 	// tl.gotoAndPlay("f2")
