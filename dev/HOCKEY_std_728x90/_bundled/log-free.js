@@ -27,8 +27,7 @@ function start() {
 	tl.add("down", "+=1.9");
 	tl.from(".t2.t2bb", .15, { y: "-=60" }, "down");
 	tl.to(".t2.t2b", .15, { y: "+=70" }, "down");
-	tl.to(".t2.t2a", .3, { x: "+=5" }, "down");
-	tl.to(".t2.t2c", .3, { x: "-=7" }, "down");
+	tl.to(".t2.t2a", .3, { x: "+=10" }, "down");
 
 	tl.to(".frame1", .2, { opacity: 0 }, "+=1.5");
 
