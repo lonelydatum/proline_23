@@ -29,7 +29,7 @@ function start() {
 	tl.to(".t2.t2b", .15, { y: "+=70" }, "down");
 	tl.to(".t2.t2a", .3, { x: "+=10" }, "down");
 
-	tl.to(".frame1", .2, { opacity: 0 }, "+=1.5");
+	tl.to(".frame1", .2, { opacity: 0 }, "+=1.2");
 
 	tl.add("f2");
 	tl.set(".frame2", { opacity: 1 });
@@ -37,7 +37,7 @@ function start() {
 	tl.from(".illus", .4, { scale: 0 });
 
 	tl.from(".t3a", .4, { opacity: 0 });
-	tl.from(".cta_wager", .3, { opacity: 0 }, "+=.2");
+	tl.from(".cta_wager", .3, { opacity: 0 }, "+=.7");
 	tl.to(".cta_wager", .3, { opacity: 0 }, "+=2");
 	tl.from(".cta_get", .3, { opacity: 0 });
 
