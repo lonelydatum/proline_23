@@ -29,6 +29,7 @@ function start(){
 	tl.from(".t2.t2bb", .15, {y:"-=60"}, "down")
 	tl.to(".t2.t2b", .15, {y:"+=70"}, "down")
 	tl.to(".t2.t2a", .3, {x:"+=10"}, "down")
+	tl.to(".t2.t2c", .3, {x:"-=2"}, "down")
 	
 
 	tl.to(".frame1", .2, {opacity:0}, "+=1.2")
