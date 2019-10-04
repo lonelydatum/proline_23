@@ -13,7 +13,7 @@ function start(){
 	tl.set(".frame1", {opacity:1})
 
 
-	const slow_time = 3
+	const slow_time = 7
 	const tl_slow = new TimelineMax()
 	tl_slow.from('.puck', slow_time, {y:"-=20", ease:Power2.easeOut}, 0)
 	tl_slow.to('.player_a.player', slow_time, {x:0, ease:Power2.easeOut}, 0)
@@ -32,7 +32,7 @@ function start(){
 	tl.to(".t2.t2c", .3, {x:"-=2"}, "down")
 	
 
-	tl.to(".frame1", .2, {opacity:0}, "+=1.2")
+	tl.to(".frame1", .2, {opacity:0}, 5.1)
 
 
 	tl.add("f2")

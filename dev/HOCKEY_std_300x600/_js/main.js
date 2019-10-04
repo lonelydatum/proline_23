@@ -7,7 +7,7 @@ function start(){
 	const scaled = 1.4
 	const x = 19
 
-	const slow_time = 3
+	const slow_time = 4
 
 	const tl_slow = new TimelineMax()
 	tl_slow.from('.puck', slow_time, {y:"-=20", ease:Power2.easeOut}, 0)
@@ -30,21 +30,16 @@ function start(){
 	tl.from(".t1c", .01, {opacity:0}, 'text+=.7')
 
 
-	// tl.to(".t1", .3, {opacity:0}, '+=2')	
+	
+	
+	
+
 	
 	
 
 	
 
-	tl.to('.proline_outline.big .holder', .75, { ease:Power2.easeOut, x:0, y:"+=500"}, 'zoomin')	
-	tl.to('.proline_outline.small .holder', .75, { ease:Power2.easeOut, x:0, y:0}, 'zoomin')	
-	tl.to('.proline_outline.big .holder', 2, { ease:Linear.easeNone, x:0, y:"+=100"}, 'zoomin+=.7')	
-	tl.to('.proline_outline.small .holder', 2, { ease:Linear.easeNone, x:0, y:"-=100"}, 'zoomin+=.7')	
-	
-
-	
-
-	tl.add('end', '-=.5')
+	tl.add('end', 3)
 	tl.to(".frame1", .2, {opacity:0}, 'end')
 
 	tl.set(".frame2", {opacity:1})

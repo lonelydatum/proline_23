@@ -30,12 +30,12 @@
 
 
 .player_a{
-	@include pos-scale(-20, 0, .5);
+	@include pos-scale(-25, 0, .5);
 	
 }
 
 .player_b{
-	@include pos-scale(20, 0, .5);
+	@include pos-scale(25, 0, .5);
 }
 
 

@@ -12,7 +12,7 @@ function start() {
 
 	tl.set(".frame1", { opacity: 1 });
 
-	var slow_time = 3;
+	var slow_time = 7;
 	var tl_slow = new TimelineMax();
 	tl_slow.from('.puck', slow_time, { y: "-=20", ease: Power2.easeOut }, 0);
 	tl_slow.to('.player_a.player', slow_time, { x: 0, ease: Power2.easeOut }, 0);
@@ -30,7 +30,7 @@ function start() {
 	tl.to(".t2.t2a", .3, { x: "+=10" }, "down");
 	tl.to(".t2.t2c", .3, { x: "-=2" }, "down");
 
-	tl.to(".frame1", .2, { opacity: 0 }, "+=1.2");
+	tl.to(".frame1", .2, { opacity: 0 }, 5.1);
 
 	tl.add("f2");
 	tl.set(".frame2", { opacity: 1 });
