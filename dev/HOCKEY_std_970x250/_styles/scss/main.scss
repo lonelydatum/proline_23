@@ -1,0 +1,86 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+
+
+.frame1 {
+	opacity: 1;
+}
+
+
+
+#banner{
+	font-size: 20px;
+	color: #333;
+	width: 970px;
+	height: 250px;
+}
+
+
+
+
+.shadow{
+	
+}
+
+.puck{
+	
+}
+
+
+.player_a{
+	@include pos-scale(-20, 0, 1);
+	
+}
+
+.player_b{
+	@include pos-scale(20, 0, 1);
+}
+
+
+.illus{
+	transform-origin: 230px 250px;
+}
+
+img.logoItem2{
+	@include pos(0, 463);
+}
+
+#legalBtn{	
+	// opacity: 1;
+	@include pos(16, 194);
+}
+
+
+.proline_outline{
+	height: 380px;
+	width: 93px;	
+	.holder{
+		
+		img.logoItem2{
+			@include pos(0, 292);
+		}
+	}
+	overflow: hidden;
+	// background-color: red;
+	
+}
+
+.proline_outline.big{
+	@include pos-scale-rotate(-31, -90, 1, 53);
+	.holder{
+		@include pos(0, -590);
+	}
+	// @include pos-scale-rotate(239, -340, 1, 53);
+}
+
+.proline_outline.small{
+	@include pos-scale-rotate(281, -65, 1, -36);
+	.holder{
+		@include pos(0, 380);
+	}
+}
+
+
+
