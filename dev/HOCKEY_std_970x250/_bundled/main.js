@@ -14,7 +14,7 @@ function start() {
 
 	var slow_time = 5;
 	var tl_slow = new TimelineMax();
-	tl_slow.from('.puck', slow_time, { y: "-=20", ease: Power2.easeOut }, 0);
+	tl_slow.from('.puck', slow_time, { y: "-=50", ease: Power2.easeOut }, 0);
 	tl_slow.to('.player_a.player', slow_time, { x: 0, ease: Power2.easeOut }, 0);
 	tl_slow.to('.player_b.player', slow_time, { x: 0, ease: Power2.easeOut }, 0);
 
